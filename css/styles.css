@@ -1,251 +1,190 @@
-body,
-p,
-h1,
-a,
-ul,
-li,
-blockquote,
-h2 {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #fd746c;
+    --secondary-color: #DADADA;
+    --hover-color: #ff9068;
+    --paragraph-color: #949495;
+}
 
 body {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
     background: #171c28;
     color: white;
 }
 
-body a {
-    color: #007bff;
+nav {
+    height: 80px;
+    width: 100%;
 }
 
-span:hover {
-    color: #007bff;
+label.logo {
+    font-size: 1rem;
+    line-height: 80px;
+    padding: 0 60px;
+    font-weight: bold;
 }
 
-html body {
-    font-family: 'Inconsolata', monospace;
-    line-height: 1.5;
+nav ul {
+    float: right;
+    margin-right: 20px;
 }
 
-.resume {
-    padding: 70px 100px;
-    padding-bottom: 160px;
-    font-size: 2.5rem;
-    font-weight: 300;
-    max-width: 700px;
-}
-
-.resume h1 {
-    font-weight: 300;
-    padding-bottom: 60px;
-    font-weight: 300;
-    font-size: 2.25rem;
-}
-
-.contato {
-    padding-top: 80px;
-    font-size: 1.25rem;
-    font-weight: 400;
-}
-
-.contato-email {
-    color: #e7e7e7;
-    font-weight: 700;
-    font-size: 1.25rem;
-    box-shadow: inset 0 -3px 0 #007bff;
+nav ul li {
+    font-size: 1.1rem;
     display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
 
-.contato-email:hover {
-    color: #007bff;
+nav ul li a {
+    color: white;
+    padding: 7px;
 }
 
-.span {
-    font-weight: 700;
+a:hover {
+    font-weight: bold;
+    transition: 0.5s;
+    color: var(--hover-color);
 }
 
-.resume p {
-    max-width: 700px;
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
-.flex-skills {
-    display: flex;
-    padding: 160px;
+#check{
+    display: none;
 }
 
-.flex-skills h1 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #007bff;
-    font-weight: 700;
-    font-size: 1.25rem;
+.fa-bars:hover {
+    font-size: 32px;
+    color: var(--hover-color);
 }
 
-.skills-info {
-    margin-left: 100px;
+/* === INTRODUCTION SECTION === */
+
+.introduction {
+    margin-top: 40px;
+    padding: 40px;
+    font-weight: bold;
+    line-height: 2;
+    font-size: 1.7rem;
+    color: white;
 }
 
-.skills-container,
-h2 {
-    display: flex;
-    margin: 0 auto;
-    font-size: 1.25rem;
+.introduction span {
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
-.lista-itens {
-    margin: 3px 0;
-    font-size: .9rem;
-    text-align: left;
-    color: #afafbf;
+.introduction span:hover {
+    color: var(--hover-color);
 }
 
-.footer {
-    font-size: 1.25rem;
-    margin: 30px 60px;
+.introduction__status {
+    margin-top: 50px;
+    color: var(--paragraph-color);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.introduction__status a {
+    color: var(--primary-color);
+}
+
+.introduction__status a:hover {
+    color: var(--hover-color);
+    font-weight: bold;
+}
+
+.down-arrow {
     text-align: center;
-    border-top: solid 1px #007bff;
+    margin-top: 50px;
 }
 
-.footer ul li {
-    display: inline-block;
-    font-weight: 700;
-    margin-left: 20px;
-    padding-top: 20px;
+.down-arrow p {
+    color: var(--secondary-color);
 }
 
-.footer a {
-    padding: 10px;
+.down-arrow i {
+    margin-top: 15px;
+    font-size: 24px;
+    color: white;
 }
 
+.down-arrow i:hover {
+    font-size: 28px;
+    color: var(--hover-color);
+    transition: all 0.5s;
+}
 
+.card {box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);}
 
-/*  RESPONSIVIDADE */
+@media (max-width: 952px){
 
-@media screen and (max-width: 1024px) {
-    .resume {
-        font-size: 2.25rem;
+    label.logo{
+    padding-left: 30px;
     }
 
-    .resume h1 {
-        font-size: 2.25rem;
-    }
+nav ul li a{
+    font-size: 16px;
+    }  
 
 }
 
-@media screen and (max-width: 768px) {
-    .header {
-        font-size: 1rem;
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #171c28;
+        top: 80px;
+        left: -100%;
         text-align: center;
+        transition: all .5s;
+        z-index: 1;
     }
 
-    .resume {
-        font-size: 2rem;
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
     }
 
-    .resume h1 {
-        font-size: 2rem;
+    nav ul li a{
+        font-size: 20px;
     }
 
-    .contato {
-        padding-top: 30px;
-    }
-
-}
-
-@media screen and (max-width: 630px) {
-    .resume {
-        padding: 120px 70px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .resume {
-        font-size: 1.75rem;
-        padding: 120px 50px;
-    }
-
-    .resume h1 {
-        font-size: 2rem;
-    }
-
-    .nav-bar {
-        font-size: 1rem;
-        justify-content: center;
-        padding-right: 0px;
+    #check:checked ~ ul{
+        left: 0;
     }
 
 }
 
-
-
-@media screen and (max-width: 550px) {
-    .resume {
-        padding: 120px 50px;
+@media (min-width: 768px) {
+    .introduction {
+        height: 320px;
     }
-
-}
-
-@media screen and (max-width: 480px) {
-    .resume {
-        padding: 70px 50px;
-    }
-}
-
-
-/*    SKILLS RESPONSIVO    */
-
-
-@media screen and (max-width: 1024px) {
-    .flex-skills {
-        padding: 100px;
-    }
-
-    .skills-container h1,
-    ul {
-        margin-right: 10px;
-    }
-
-    .skills-info {
-        margin-left: 30px;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .flex-skills {
-        padding: 60px;
-    }
-
-    .skills-container h1,
-    ul {
-        margin-right: 10px;
-    }
-
-    .skills-info {
-        margin-left: 20px;
-    }
-
-}
-
-@media screen and (max-width: 630px) {
-
-    .flex-skills,
-    h1 {
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-    .skills-container {
-        margin-top: 20px;
-        justify-content: center;
-    }
-
-    .skills-info {
-        margin-left: 5px;
-    }
-
 }
