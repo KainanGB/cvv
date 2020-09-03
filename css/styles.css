@@ -122,12 +122,12 @@ a:hover {
 
 .down-arrow i, .fa-github {
     margin-top: 15px;
-    font-size: 24px;
+    font-size: 28px;
     color: white;
 }
 
 .down-arrow i:hover, .fa-github:hover {
-    font-size: 28px;
+    font-size: 32px;
     color: var(--hover-color);
     transition: all 0.5s;
 }
@@ -141,7 +141,7 @@ a:hover {
     margin: 60px auto;
     padding: 10px;
     width: 400px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 30px 10px rgba(0, 0, 0, 0.4);
     background-color: rgba(23,28,40, 0.4);
 }
@@ -157,9 +157,20 @@ a:hover {
 }
 
 .card__description {
+    padding: 10px 0;
     color: var(--paragraph-color);
 }
 
+.card__links, a {
+    padding: 8px;
+    text-align: center;
+    position: relative;
+    line-height: 1.5;
+}
+
+.card__links p {
+    color: var(--paragraph-color);
+}
 
 
 
