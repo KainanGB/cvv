@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/66a6703609.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/form.css">
     <title>Kainan Gabriel</title>
 </head>
 
@@ -25,7 +27,8 @@
     <section class="introduction">
         <p><span>Hello!</span> , my name is <span>Kainan Gabriel. </span>Aspiring to be a full-stack developer.</p>
         <div class="introduction__status">
-            <p>I'm currently getting my degree as a computer science student and doing some side <a href="#">projects</a> to sharp my skills</p>
+            <p>I'm currently getting my degree as a computer science student and doing some side <a
+                    href="#">projects</a> to sharp my skills</p>
         </div>
 
     </section>
@@ -33,10 +36,12 @@
         <p>Get to see some of my recently projects.</p>
         <a href="#"><i class="fas fa-arrow-alt-circle-down"></i></a>
     </div>
+
     <section class="projects">
         <div class="cards">
             <div class="card">
-                <div > <img class="img" style="width: 100%; height: 240px;" src="/assets/AmazingGraph.png" alt="AmazingGraph-img"></div>
+                <div> <img class="img" style="width: 100%; height: 240px;" src="/assets/AmazingGraph.png"
+                        alt="AmazingGraph-img"></div>
                 <div class="card__info">
                     <h3 class="card__title">AmazingGraph</h3>
                     <p class="card__description">Landing page para site de criação de gráficos</p>
@@ -48,10 +53,12 @@
             </div>
 
             <div class="card">
-                <div > <img class="img" style="width: 100%; height: 240px;" src="/assets/Contador2.png" alt="Contador-img"></div>
+                <div> <img class="img" style="width: 100%; height: 240px;" src="/assets/Contador2.png"
+                        alt="Contador-img"></div>
                 <div class="card__info">
                     <h3 class="card__title">Contador</h3>
-                    <p class="card__description">Contador de quantos dias, horas, minutos e segundos faltam até a data programada</p>
+                    <p class="card__description">Contador de quantos dias, horas, minutos e segundos faltam até a data
+                        programada</p>
                     <div class="card__links">
                         <a href="https://github.com/KainanGB/contador"><i class="fab fa-github"></i></a>
                         <p>Source code.</p>
@@ -61,9 +68,54 @@
 
         </div>
     </section>
-    
-    
 
+    <section class="about">
+        <div class="about__card">
+            <div> <img class="img" src="/assets/me.png" alt="kainan-img"></div>
+            <div class="about__info">
+                <h2 class="about__title">Something about me</h2>
+                <p class="about__description">Hello, <span>I am Kainan - Front-end Developer</span> from Brazil - São
+                    Paulo, SP.</p>
+                <p class="about__description">These days i'm focused in my studies, getting better everyday in my field
+                    to eventually get a job as a developer</p>
+                <p class="about__description">You can find more about my skills<a href="">in my resume.</a></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <form action="https://formspree.io/xqkyrevz" method="POST">
+            <h1>contact me</h1>
+            <p>I'd love to hear from you!</p>
+
+            <div class="input-container">
+                <div class="styled-input wide">
+                    <input type="text" class="name" name="name" required />
+                    <label>Name</label>
+                </div>
+
+                <div class="styled-input">
+                    <input type="text" class="email" name="email" required />
+                    <label>Email</label>
+                </div>
+
+                <div class="styled-input wide">
+                    <textarea name="message" class="message" required></textarea>
+                    <label>Message</label>
+                </div>
+
+                <div class="form-error" ></div>
+
+                <button type="submit" class="submit-btn"><p>Send Message</p></button>
+
+            </div>
+        </form>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 0;">All rights to Kainan Gabriel</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="/index.js"></script>
 </body>
 
 </html>

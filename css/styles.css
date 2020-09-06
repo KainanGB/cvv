@@ -104,6 +104,7 @@ a:hover {
 
 .introduction__status a {
     color: var(--primary-color);
+    padding: 0;
 }
 
 .introduction__status a:hover {
@@ -137,9 +138,9 @@ a:hover {
 .projects {
     margin-top: 60px;
 }
+
 .card {
     margin: 60px auto;
-    padding: 10px;
     max-width: 400px;
     border-radius: 8px;
     box-shadow: 0 30px 10px rgba(0, 0, 0, 0.4);
@@ -148,16 +149,17 @@ a:hover {
 
 .card:hover {
     box-shadow: 5px 30px 20px rgba(0, 0, 0, 0.5);
-    transition: all 0.5;
 }
 
-.card__title {
-    padding: 10px 0;
+.card__info {
+    padding: 20px 10px;
+}
+
+.card__title { 
     line-height: 2;
 }
 
 .card__description {
-    padding: 10px 0;
     color: var(--paragraph-color);
 }
 
@@ -170,6 +172,51 @@ a:hover {
 
 .card__links p {
     color: var(--paragraph-color);
+}
+
+/* === ABOUT SECTION === */
+
+.about {
+    margin: 60px auto;
+    max-width: 400px;
+}
+
+.about__card img {
+    display: block;
+    margin: 0 auto;
+    min-width: 310px;
+}
+
+.about__info {
+    padding: 20px;
+}
+
+.about__title {
+    padding: 30px 0;
+}
+
+.about__description {
+    color: var(--paragraph-color);
+    line-height: 2;
+}
+
+.about__description span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.about__description span:hover {
+    color: var(--hover-color);
+}
+
+.about__description:nth-child(3) {
+    margin: 20px 0;
+}
+
+.about__description a {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 
@@ -223,6 +270,18 @@ nav ul li a{
     
     .introduction {
         line-height: 1.5;
+    }
+
+}
+
+
+@media (min-width: 420px) {
+    .about__card img{
+        min-width: 380px;
+    }
+
+    .about__info {
+        padding: 12px
     }
 
 }
