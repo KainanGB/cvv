@@ -70,7 +70,7 @@ a:hover {
     display: none;
 }
 
-.fa-bars:hover {
+.card__links .fa-bars:hover {
     font-size: 32px;
     color: var(--hover-color);
 }
@@ -81,7 +81,7 @@ a:hover {
     margin-top: 40px;
     padding: 40px;
     font-weight: bold;
-    line-height: 2;
+    line-height: 1.5;
     font-size: 1.7rem;
     color: white;
 }
@@ -121,7 +121,7 @@ a:hover {
     color: var(--secondary-color);
 }
 
-.down-arrow i, .fa-github {
+.down-arrow i,.card__links .fa-github {
     margin-top: 15px;
     font-size: 28px;
     color: white;
@@ -145,6 +145,15 @@ a:hover {
     border-radius: 8px;
     box-shadow: 0 30px 10px rgba(0, 0, 0, 0.4);
     background-color: rgba(23,28,40, 0.4);
+}
+
+.title {
+    display: none;
+}
+
+.card .img {
+    width: 100%; 
+    /* height: 240px; */
 }
 
 .card:hover {
@@ -219,6 +228,31 @@ a:hover {
     text-decoration: underline;
 }
 
+footer {
+    border-top: 1px solid var(--paragraph-color);
+}
+
+footer ul {
+    display: flex; 
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+footer ul li {
+    align-self: center;
+    margin-left: 10px;
+}
+
+footer ul li i {
+    font-size: 28px;
+    color: white
+}
+
+footer ul li i:hover {
+    font-size: 32px;
+    color: var(--hover-color);
+    transition: all 0.5s;
+}
 
 
 @media (max-width: 952px){
@@ -227,9 +261,9 @@ a:hover {
     padding-left: 30px;
     }
 
-nav ul li a{
+    nav ul li a{
     font-size: 16px;
-    }  
+    }
 
 }
 
@@ -242,7 +276,7 @@ nav ul li a{
         display: none;
     }
 
-    ul{
+    nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -267,11 +301,83 @@ nav ul li a{
     #check:checked ~ ul{
         left: 0;
     }
+
+}
+
+@media (max-width: 767px) {
+    .introduction__status {
+        padding-top: 20px;
+    }
     
+    .down-arrow {
+        padding-bottom: 40px;
+    }   
+}
+
+@media (min-width: 858px) {
+
     .introduction {
-        line-height: 1.5;
+        margin-top: 80px;
     }
 
+    /* .title {
+        display: flex;
+        font-size: 1.5rem;
+        align-self: center;
+    } */
+
+    .projects {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards {
+        display: flex;
+    }
+
+    .card {
+        margin: 40px 40px;
+    }
+
+    .about {
+        margin: 100px auto;
+        max-width: 600px;
+    }
+
+    .about__title {
+        font-size: 2rem;
+    }
+
+    .about__info {
+        font-size: 1rem;
+    }
+
+    /* .about__card img {
+        width: 400px;
+    } */
+
+    
+}
+
+@media (min-width: 768px) {
+
+    .introduction {
+        position: relative;
+        top: 50px;
+        font-size: 2rem;
+        padding-bottom: 120px;
+    }
+
+    .introduction p:first-child {
+        width: 700px;
+        font-size: 2rem;
+    }
+    
+    .introduction__status p:first-child {
+        font-size: 1.2rem;
+        width: 660px;
+        line-height: 1.8;
+    }
 }
 
 
@@ -283,5 +389,4 @@ nav ul li a{
     .about__info {
         padding: 12px
     }
-
 }
