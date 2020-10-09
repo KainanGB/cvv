@@ -139,6 +139,10 @@ a:hover {
     margin-top: 60px;
 }
 
+.cards {
+    margin: 0 5px;
+}
+
 .card {
     margin: 60px auto;
     max-width: 400px;
@@ -193,7 +197,8 @@ a:hover {
 .about__card img {
     display: block;
     margin: 0 auto;
-    min-width: 310px;
+    min-width: 210px;
+    max-width: 100%;
 }
 
 .about__info {
@@ -269,7 +274,11 @@ footer ul li i:hover {
 
 @media (max-width: 858px){
     .checkbtn{
-        display: block;
+        display: none;
+    }
+
+    nav {
+        display: none;
     }
 
     .logo {
@@ -311,7 +320,8 @@ footer ul li i:hover {
     
     .down-arrow {
         padding-bottom: 40px;
-    }   
+    }
+
 }
 
 @media (min-width: 858px) {
@@ -378,7 +388,7 @@ footer ul li i:hover {
 
 
 @media (min-width: 420px) {
-    .about__card img{
+    .about__card img {
         min-width: 380px;
     }
 
