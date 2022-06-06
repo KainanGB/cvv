@@ -1,22 +1,12 @@
-$('.submit-btn').click(function (e) {
-  const email = $('.email').val()
-  const message = $('.message').val()
-  const statusEl = $('.form-error')
-  statusEl.empty()
+const ul = document.querySelector(".links");
+const check = document.querySelector("#check");
 
-  const emailValidation = !(email.length > 5 && email.includes('@') && email.includes('.'))
-  const messageValidation = !(message.length >= 5)
+check.addEventListener("click", () => {
+  if (ul.style.left === "0%") {
+    ul.style.left = "100%";
+  } else ul.style.left = "0%";
+});
 
-  if(emailValidation) {
-    statusEl.css("display", "block")
-    statusEl.append(`<div>Email is not valid</div>`)
-    e.preventDefault()
-  }
-
-  if(messageValidation) {
-    statusEl.css("display", "block")
-    statusEl.append('<div>Message is not valid</div>')
-    e.preventDefault()
-  }
-
-})
+ul.addEventListener("click", (e) => {
+  if ((e.target.className = "link")) ul.style.left = "100%";
+});
