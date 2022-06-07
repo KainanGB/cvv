@@ -13,32 +13,90 @@
   </head>
 
   <body>
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo fa-solid fa-code"></label>
-      <ul class="links">
-        <li><a class="link" href="#projects">Projects</a></li>
-        <li><a class="link" href="#about">About</a></li>
-      </ul>
-    </nav>
-    <section class="introduction">
-      <p>
-        <span>Hello! <br /></span>
-        My name is <span>Kainan Gabriel. </span>Aspiring to be a full-stack
-        developer.
-      </p>
-      <div class="introduction__status">
-        <p>I'm currently getting my degree in computer science.</p>
-      </div>
-    </section>
+    <div class="container">
+      <nav class="nav">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo fa-solid fa-code"></label>
+        <ul class="links">
+          <li><a class="link" href="#projects">Projects</a></li>
+          <li><a class="link" href="#about">About</a></li>
+        </ul>
+      </nav>
+      <section class="introduction">
+        <p>
+          <span>Hello! <br /></span>
+          My name is <span>Kainan Gabriel. <br /></span>Aspiring to be a
+          full-stack developer.
+        </p>
+        <div class="introduction__status">
+          <p>I'm currently getting my degree in computer science.</p>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <div class="cards">
+          <h1>Projects</h1>
+          <div class="card">
+            <div class="card__header">
+              <h1 class="card__title">Viagem de Chihiro Landing Page</h1>
+              <p class="card__description">
+                Landing inspirada no filme Viagem de Chihiro e layout feito pela
+                Codelândia
+              </p>
+              <a
+                target="_blank"
+                href="https://viagem-de-chihiro-kainan-dev.netlify.app/"
+                class="card__link"
+                >Live Demo</a
+              >
+              <div class="card__info">
+                <a
+                  target="_blank"
+                  href="https://github.com/KainanGB/viagem-chihiro-sp"
+                  class="detail"
+                  >View repository</a
+                >
 
-    <div class="title"><h1>Projects</h1></div>
-    <section id="projects" class="projects">
-      <div class="cards">
-        <div class="card">
+                <span class="detail">HTML, CSS & JS</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <img class="card__img" src="./assets/ghibli.png" alt="" />
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__header --order">
+              <h1 class="card__title">Base Apparel Coming Soon Page</h1>
+              <p class="card__description">
+                Landing inspirada no filme Viagem de Chihiro e layout feito pela
+                Codelândia
+              </p>
+              <a
+                target="__blank"
+                href="https://base-apparel-kn-dev.netlify.app/"
+                class="card__link"
+                >Live Demo</a
+              >
+              <div class="card__info">
+                <a
+                  target="_blank"
+                  href="https://github.com/KainanGB/base-apparel"
+                  class="detail"
+                  >View repository</a
+                >
+
+                <span class="detail">HTML, CSS & JS</span>
+              </div>
+            </div>
+            <div class="card__body --yellow">
+              <img class="card__img" src="./assets/base-apparel.jpg" alt="" />
+            </div>
+          </div>
+
+          <!--<div class="card">
           <img class="img" src="/assets/base-apparel.jpg" alt="project-img" />
 
           <div class="card__info">
@@ -57,9 +115,9 @@
               >
             </div>
           </div>
-        </div>
+        </div>-->
 
-        <div class="card">
+          <!--<div class="card">
           <div class="card__header">
             <img class="img" src="/assets/ghibli.png" alt="Contador-img" />
           </div>
@@ -80,9 +138,9 @@
               >
             </div>
           </div>
-        </div>
+        </div>-->
 
-        <div class="card">
+          <!--<div class="card">
           <div class="card__header">
             <img class="img" src="/assets/weather.png" alt="bateria-img" />
           </div>
@@ -100,12 +158,11 @@
               >
             </div>
           </div>
+        </div>-->
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="about">
-      <div class="about__card">
+      <section id="about" class="about">
         <div class="about__info">
           <h2 class="about__title">Something about me</h2>
           <p class="about__description">
@@ -124,27 +181,26 @@
             >
           </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer style="text-align: left; padding: 40px 10px">
-      <ul>
-        <li>Inspired by Anton Zakharov</li>
+      <footer style="text-align: left; padding: 40px 10px">
         <ul>
-          <li>
-            <a target="_" href="https://www.linkedin.com/in/kainangabriel/"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a target="_" href="https://github.com/KainanGB"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
+          <li>Inspired by Anton Zakharov</li>
+          <ul>
+            <li>
+              <a target="_" href="https://www.linkedin.com/in/kainangabriel/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_" href="https://github.com/KainanGB"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
         </ul>
-      </ul>
-    </footer>
-
+      </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="/index.js"></script>
   </body>
