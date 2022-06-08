@@ -30,7 +30,7 @@ body {
   font-family: "Open Sans", "Roboto", sans-serif;
   background: #171c28;
   color: white;
-  background-image: url(/assets/circles.png);
+  background-image: url(/assets/circles3.png);
 }
 
 .container {
@@ -96,7 +96,7 @@ nav a:hover {
 /* === INTRODUCTION SECTION === */
 
 .introduction {
-  margin-top: 7rem;
+  margin-top: 9rem;
   font-weight: bold;
   line-height: 1.5;
   font-size: 1.7rem;
@@ -230,6 +230,9 @@ nav a:hover {
 
 .experience {
   padding: 2em 0;
+}
+
+.experience__card {
 }
 
 .experience__body {
