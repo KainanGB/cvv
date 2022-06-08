@@ -113,33 +113,6 @@ nav a:hover {
   color: var(--hover-color);
 }
 
-.introduction__status {
-  margin-top: 3.125rem;
-  color: var(--paragraph-color);
-  font-size: 16px;
-  font-weight: normal;
-  letter-spacing: 0px;
-}
-
-.introduction__status a {
-  color: var(--primary-color);
-  padding: 0;
-}
-
-.introduction__status a:hover {
-  color: var(--hover-color);
-}
-
-.card__links .fa-github {
-  margin-top: 15px;
-  font-size: 28px;
-  color: white;
-}
-
-.fa-github:hover {
-  color: var(--hover-color);
-}
-
 /* === PROJECTS SECTION === */
 
 .projects {
@@ -255,34 +228,36 @@ nav a:hover {
   letter-spacing: 0.4px;
 }
 
-/* === ABOUT SECTION === */
+/* === TECHONOGLIES === */
 
-.about__description {
-  color: var(--paragraph-color);
+.techonologies {
+  padding: 2em 0;
+}
+
+.techonologies__title {
+  margin-bottom: 1em;
+}
+
+.technologies__body {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2em;
+  border-radius: 1rem;
+}
+
+.technology {
   line-height: 2;
 }
 
-.about__description span {
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-.about__description span:hover {
-  color: var(--hover-color);
-}
-
-.about__description:nth-child(3) {
-  margin: 20px 0;
-}
-
-.about__description a {
+.technology__description a {
   font-weight: bold;
   color: var(--primary-color);
   text-decoration: underline;
 }
+/* === ABOUT SECTION === */
 
 footer {
   border-top: 1px solid var(--paragraph-color);
+  padding: 2em 0;
 }
 
 footer ul {
